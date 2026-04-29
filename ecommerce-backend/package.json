@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "This is the backend for the [ecommerce-project](https://github.com/SuperSimpleDev/ecommerce-project). - 95% of the code was generated with AI.",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
