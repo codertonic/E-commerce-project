@@ -3,11 +3,16 @@ import {useState} from 'react'
 import {Link } from "react-router-dom";
 import {NavLink,useNavigate,useSearchParams } from 'react-router'
 
-export function Header({cart= []}){
+export function Header({cart=[]}){
   let totalQuantity =0; 
+  // cart.forEach((cartItem) => {
+  //   totalQuantity +=cartItem.quantity;
+  // }); 
+  if (Array.isArray(cart)) {
   cart.forEach((cartItem) => {
-    totalQuantity +=cartItem.quantity;
-  }); 
+    totalQuantity += cartItem.quantity;
+  });
+}
   const Navigation=useNavigate();
   // This UseState is used to Track the search
   const [inputVal,setinputVal]=useState("");

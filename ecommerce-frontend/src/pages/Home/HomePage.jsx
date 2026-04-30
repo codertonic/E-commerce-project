@@ -1,4 +1,4 @@
-// import axios, { formToJSON } from 'axios'
+ import axios from 'axios'
 import {useEffect, useState} from 'react'
 import  {Header} from '../../components/Header'
 // import {products } from '../../starting-ecommerce/data/products'
