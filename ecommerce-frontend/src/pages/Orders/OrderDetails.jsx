@@ -10,7 +10,7 @@ export function OrderDetails({Order,loadCart}){
          <div className="order-details-grid">
                              {Order.products.map((OrdersProduct)=>{
                               const UpdateCartItem=async ()=>{
-                              await   axios.post('/api/cart-items',{
+                              await   axios.post('https://ecommerce-project-backend-pkdr.onrender.com/api/cart-items',{
                                productId:OrdersProduct.product.id,
                                quantity:1                 });
                                  await loadCart();                                   

@@ -13,7 +13,7 @@ export function HomePage({cart, loadCart}){
   // In begin we use products data in js so we fetch the data from api(BE) that's why we use that !
   useEffect(()=>{
         const getHomeData = async ()=>{
-         const response= await   axios.get('/api/products')
+         const response= await   axios.get('https://ecommerce-project-backend-pkdr.onrender.com/api/products')
          // don't forget to uncomt this line 
         //  const urlpath=search? `/api/products?search=${search}`:`api/products`;
         //   const Res=await axios.get(urlpath);

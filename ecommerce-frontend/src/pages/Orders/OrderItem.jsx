@@ -10,7 +10,7 @@ export function OrderItem({cart}){
   const [Orders,setOrder]=useState([]);
   useEffect(()=>{
     const fetchOrderdata=async ()=>{
-         const response=await axios.get('/api/orders?expand=products')
+         const response=await axios.get('https://ecommerce-project-backend-pkdr.onrender.com/api/orders?expand=products')
             setOrder(response.data)
     }
          fetchOrderdata();

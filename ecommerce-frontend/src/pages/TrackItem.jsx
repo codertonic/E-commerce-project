@@ -12,7 +12,7 @@ export function TrackItem({cart}){
    const [order, setTrack]=useState(null);
   useEffect(()=>{
          const fetchTrack=async ()=>{
-             const response=await axios.get(`/api/orders/${orderId}?expand=products`);
+             const response=await axios.get(`https://ecommerce-project-backend-pkdr.onrender.com/api/orders/${orderId}?expand=products`);
                       //  console.log(response.data);
                      setTrack(response.data);
          }

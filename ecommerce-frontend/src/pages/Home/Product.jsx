@@ -18,7 +18,7 @@ export function Product({product,loadCart}){
                   
                 }
       const AddQuantity=async () => {
-                await axios.post('/api/cart-items', {
+                await axios.post('https://ecommerce-project-backend-pkdr.onrender.com/api/cart-items', {
                   productId: product.id,
                   quantity:quantity
                 })

@@ -21,7 +21,7 @@ export function UpdateData({cartItem,DeleteItem,selectedDeliverydate,loadCart,de
        }
        const UpdateQuantity= async()=>{
           if(Track){
-         await   axios.put(`/api/cart-items/${cartItem.product.id}`,
+         await   axios.put(`https://ecommerce-project-backend-pkdr.onrender.com/api/cart-items/${cartItem.product.id}`,
               { quantity:Number(NumQuantity)
   } );
   await loadCart();

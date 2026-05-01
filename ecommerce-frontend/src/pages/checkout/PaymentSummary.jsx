@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 export function PaymentSummary({PaymentSummery,loadCart}){
   const Navigation=useNavigate();
   const UpdateToOrder=async()=>{
-          await axios.post('/api/orders');
+          await axios.post('https://ecommerce-project-backend-pkdr.onrender.com/api/orders');
           await loadCart();
           Navigation('/orders')
   }

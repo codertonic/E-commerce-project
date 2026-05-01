@@ -13,7 +13,7 @@ export function DeliveryOption({deliveryOptions,cartItem,loadCart}){
                                       priceString=`${formatMoney(deliveryOption.priceCents)}-Shipping`
                                     } 
                                        const UpdateDeliveryDate=async ()=>{
-                                      await   axios.put(`/api/cart-items/${cartItem.productId}`, {
+                                      await   axios.put(`https://ecommerce-project-backend-pkdr.onrender.com/api/cart-items/${cartItem.productId}`, {
                                           deliveryOptionId:deliveryOption.id
                                          } ) 
                                          await loadCart(); 

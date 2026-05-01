@@ -18,7 +18,7 @@ function App() {
   const [cart,setCart]=useState([]);
   // const [count, setCount] = useState(0)
   const loadCart=async ()=>{
-         const response =await axios.get('/api/cart-items?expand=product')
+         const response =await axios.get('https://ecommerce-project-backend-pkdr.onrender.com/api/cart-items?expand=product')
              setCart(response.data)  ;
     } ; 
   useEffect(() =>{    
