@@ -13,7 +13,7 @@ export function OrderSummary ({cart,deliveryOptions,loadCart}){
                       return deliveryOption.id===cartItem.deliveryOptionId;
                     })  
                     const DeleteItem=async  ()=>{
-                        await axios.delete(`./api/cart-items/${cartItem.productId}`)
+                        await axios.delete(`https://ecommerce-project-backend-pkdr.onrender.com/api/cart-items/${cartItem.productId}`)
                         await loadCart();
                     } 
                     
