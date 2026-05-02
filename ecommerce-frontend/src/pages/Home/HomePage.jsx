@@ -15,11 +15,11 @@ export function HomePage({cart, loadCart}){
         const getHomeData = async ()=>{
          const response= await   axios.get('https://ecommerce-project-backend-pkdr.onrender.com/api/products')
          // don't forget to uncomt this line 
-        //  const urlpath=search? `/api/products?search=${search}`:`api/products`;
-        //   const Res=await axios.get(urlpath);
+         const urlpath=search? `/api/products?search=${search}`:`api/products`;
+          const Res=await axios.get(urlpath);
          
         setProducts(response.data)
-        // setProducts(Res.data);
+        setProducts(Res.data);
         }
        
     getHomeData()
